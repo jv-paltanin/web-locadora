@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB Locadora - Filme</title>
+<link rel="shortcut icon" href="img/favicon-48.png" />
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="css/style4.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/mascara.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-lights topbar">
+		<div class="container-fluid">
+			<div class="flip-container-btnvoltar at-item"
+				data-bs-toggle="tooltip" data-bs-placement="top" title="Voltar"
+				ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<a class="rotate-vert-center" href="menu.html"><img
+							src="img/favicon-48.png"></a>
+					</div>
+					<div class="back">
+						<a class="rotate-vert-center" href="menu.html"><img
+							src="img/voltar-48.png"></a>
+					</div>
+				</div>
+			</div>
+			<h3>Cadastro de filme</h3>
+			<button class="btn btn-dark d-inline-block d-lg-none ml-auto"
+				type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="true"
+				aria-label="Toggle navigation">
+				<img src="img/menu-20.png" />
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item"><button type="button" class="btn-options">
+							<img alt="" src="img/novo-24.png" data-bs-toggle="tooltip"
+								data-bs-placement="top" title="Novo" />
+						</button></li>
+					<li class="nav-item"><button type="button" class="btn-options">
+							<img alt="" src="img/alterar-24.png" data-bs-toggle="tooltip"
+								data-bs-placement="top" title="Alterar" />
+						</button></li>
+					<li class="nav-item"><button type="button" class="btn-options">
+							<img alt="" src="img/excluir-24.png" data-bs-toggle="tooltip"
+								data-bs-placement="top" title="Excluir" />
+						</button></li>
+					<li class="nav-item"><button class="btn-options"
+							onclick="document.querySelector('#flip-toggle').classList.toggle('hover');">
+							<img alt="" src="img/consultar-24.png" data-bs-toggle="tooltip"
+								data-bs-placement="top" title="Consultar" />
+						</button></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<div class="flip-container" id="flip-toggle">
+		<div class="flipper">
+			<div class="front">
+				<!-- Conteúdo da frente -->
+				<div class="d-lg-flex half">
+					<div class="container">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-md-12 py-3">
+								<form action="#" method="post">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group last mb-3">
+												<label for="nome">Nome</label> <input type="text"
+													class="form-control" id="nome">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label for="diretor">Diretor</label> <input type="text"
+													class="form-control" id="diretor">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label for="lancamento">Ano de lançamento</label> <input
+													type="date" class="form-control" id="lancamento">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group last mb-3">
+												<label for="faixa-etaria">Faixa etária</label> <select
+													class="form-control" id="faixa-etaria"
+													aria-label="Default select example">
+													<option value="livre" selected>Livre</option>
+													<option value="10">10</option>
+													<option value="12">12</option>
+													<option value="14">14</option>
+													<option value="16">16</option>
+													<option value="18">18</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label for="valor">Valor</label> <input type="text"
+													class="form-control" id="valor">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label>Disponível</label>
+												<div class="linha">
+													<div class="group-radio group-radio-sim">
+														<input id="sim-disponivel" type="radio" name="disponivel"
+															value="sim"> <label for="sim-disponivel">Sim</label>
+													</div>
+													<div class="group-radio group-radio-nao">
+														<input id="nao-disponivel" type="radio" name="disponivel">
+														<label for="nao-disponivel">Não</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label>Promoção</label><br>
+												<div class="linha">
+													<div class="group-radio group-radio-sim">
+														<input id="sim-promocao" type="radio" name="promocao"
+															value="sim"> <label for="sim-promocao">Sim</label>
+													</div>
+													<div class="group-radio group-radio-nao">
+														<input id="nao-promocao" type="radio" name="promocao">
+														<label for="nao-promocao">Não</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<label for="valor-promocao">Valor da Promoção</label> <input
+													type="text" class="form-control" id="valor-promocao">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group last mb-3">
+												<label for="generos">Gênero</label> <select
+													class="form-control" id="generos">
+													<option>- Selecione Gênero -</option>
+													<option>Ação</option>
+													<option>Comédia</option>
+													<option>Suspense</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group last mb-3"></div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group last mb-3"></div>
+										</div>
+									</div>
+									<div class="row" align="center">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<button type="submit" class="btn px-4 btn-primary">
+													Salvar <img src="img/btn-salvar24.png" />
+												</button>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group last mb-3">
+												<button type="button" class="btn px-4 btn-primary">
+													Cancelar <img src="img/btn-cancel24.png" />
+												</button>
+											</div>
+										</div>
+										<div class="col-md-3"></div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="back">
+				<!-- Conteúdo de trás-->
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">Nome</th>
+							<th scope="col">Disponível</th>
+							<th scope="col">Faixa Etária</th>
+							<th scope="col">Valor</th>
+							<th scope="col">Promoção</th>
+							<th scope="col">Valor da Promoção</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>47 Ronins</td>
+							<td>Sim</td>
+							<td>14</td>
+							<td>R$ 12.00</td>
+							<td>Não</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Clube da Luta</td>
+							<td>Sim</td>
+							<td>18</td>
+							<td>R$ 15.00</td>
+							<td>Sim</td>
+							<td>R$ 10.00</td>
+						</tr>
+						<tr>
+							<td>Tron - O Legado</td>
+							<td>Não</td>
+							<td>10</td>
+							<td>R$ 12.99</td>
+							<td>Não</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery CDN - Slim version (=without AJAX) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+		crossorigin="anonymous"></script>
+
+
+	<!-- JS para toggle button -->
+	<script type="text/javascript">
+			$(document).ready(function () {
+		
+		    $('#sidebarCollapse').on('click', function () {
+		        $('#sidebar').toggleClass('active');
+		    });
+		
+		});
+	</script>
+</body>
+</html>

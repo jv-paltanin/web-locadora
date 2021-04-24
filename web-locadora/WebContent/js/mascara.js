@@ -134,7 +134,7 @@ function masc_cep(objeto) {
 		retorno = parte1;
 	}
 
-	parte2 = numero.substr(5, 4);
+	parte2 = numero.substr(5, 3);
 	if (parte2.length > 0) {
 		retorno += "-" + parte2;
 	}
@@ -150,7 +150,7 @@ function masc_num(objeto) {
 
 	numero = objeto.value.replace(padrao, "");
 
-	parte1 = numero.substr(0, 5);
+	parte1 = numero.substr(0, 9);
 	if (parte1.length > 0) {
 		retorno = parte1;
 	}
