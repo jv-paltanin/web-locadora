@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WEB Locadora - Locação</title>
+<link rel="shortcut icon" href="img/favicon-48.png" />
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="css/style4.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-lights topbar">
+		<div class="container-fluid">
+			<div class="flip-container-btnvoltar at-item"
+				data-bs-toggle="tooltip" data-bs-placement="top" title="Voltar"
+				ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<a class="rotate-vert-center" href="menu.html"><img
+							src="img/favicon-48.png"></a>
+					</div>
+					<div class="back">
+						<a class="rotate-vert-center" href="menu.html"><img
+							src="img/voltar-48.png"></a>
+					</div>
+				</div>
+			</div>
+			<h3>Locação de filmes</h3>
+		</div>
+	</nav>
+	<div class="d-lg-flex half">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-12 py-3">
+					<form action="#" method="post">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group last mb-3">
+									<label for="filmes">Filme</label> <select class="form-control"
+										id="filmes">
+										<option>- Selecione Filme -</option>
+										<option>Filme 1</option>
+										<option>Filme 2</option>
+										<option>Filme 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<label for="locacao">Data de Locação</label> <input type="date"
+										class="form-control" id="locacao">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<label for="devolucao">Data de Devolução</label> <input
+										type="date" class="form-control" id="devolucao">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<label for="valor-locacao">Valor</label> <input type="text"
+										class="form-control" id="valor-locacao">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<label>Devolvido</label><br>
+									<div class="linha">
+										<div class="group-radio group-radio-sim">
+											<input id="devolvido-sim" type="radio" name="devolvido"
+												value="sim"> <label for="devolvido-sim">Sim</label>
+										</div>
+										<div class="group-radio group-radio-nao">
+											<input id="devolvido-nao" type="radio" name="devolvido">
+											<label for="devolvido-nao">Não</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group last mb-3">
+									<label for="funcionarios">Funcionário</label> <select
+										class="form-control" id="funcionarios">
+										<option>- Selecione Funcionário -</option>
+										<option>Funcionário 1</option>
+										<option>Funcionário 2</option>
+										<option>Funcionário 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group last mb-3">
+									<label for="clientes">Cliente</label> <select
+										class="form-control" id="clientes">
+										<option>- Selecione Cliente -</option>
+										<option>Cliente 1</option>
+										<option>Cliente 2</option>
+										<option>Cliente 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group last mb-3">
+									<label for="forma-pagamentos">Forma de Pagamento</label> <select
+										class="form-control" id="forma-pagamentos">
+										<option>- Selecione Forma de Pagamento -</option>
+										<option>Crédito</option>
+										<option>Débito</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row" align="center">
+							<div class="col-md-3"></div>
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<button type="submit" class="btn px-4 btn-primary">
+										Salvar <img src="img/btn-salvar24.png" />
+									</button>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group last mb-3">
+									<button type="button" class="btn px-4 btn-primary">
+										Cancelar <img src="img/btn-cancel24.png" />
+									</button>
+								</div>
+							</div>
+							<div class="col-md-3"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
